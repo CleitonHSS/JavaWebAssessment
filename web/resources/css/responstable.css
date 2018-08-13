@@ -1,0 +1,90 @@
+
+@import "compass/css3";
+
+
+  .responstable {
+    margin: 1em 0;
+    width: 100%;
+    overflow: hidden;
+    background: #FFF;
+    color: #024457;
+    border-radius: 10px;
+    border: 1px solid #167F92;
+    tr {
+      border: 1px solid #D9E4E6;
+      &:nth-child(odd) {
+        background-color: #EAF3F3;
+      }
+    }
+     th {
+      display: none;
+      border: 1px solid graytext;
+      background-color: #167F92;
+      color: #FFF;
+      padding: 1em;
+      &:first-child {
+        
+        display: table-cell;
+        text-align: left;
+      }
+      &:nth-child(2) {
+       
+        display: table-cell;
+        span {
+          display: none;
+        }
+        &:after {
+          content: attr(data-th);
+        }
+      }
+     
+        &:nth-child(2) {
+        
+          span {
+            display: block;
+          }
+          &:after {
+            display: none;
+          }
+        }
+      
+    }
+    td {
+      display: block; 
+      word-wrap: break-word;
+      max-width: 7em;
+      &:first-child {
+        display: table-cell; 
+        text-align: left;
+        border-right: 1px solid #D9E4E6;
+      }
+      
+        border: 1px solid #D9E4E6;
+      
+    }
+    th,
+    td {
+      text-align: left;
+      margin: .5em 1em;
+        display: table-cell;
+        padding: 1em;
+        border-right: 1px solid #D9E4E6;
+      
+    }
+
+    body {
+      padding: 0 2em;
+      font-family: Arial, sans-serif;
+      color: #024457;
+      background: #f2f2f2;
+    }
+
+    h1 {
+      font-family: Verdana;
+      font-weight: normal;
+      color: #024457;
+      span {
+        color: #167F92;
+      }
+    }
+}
